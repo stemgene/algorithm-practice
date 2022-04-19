@@ -1,6 +1,8 @@
 public class Recursion_GetMax {
-    public static int getMax(int[] arr) {
-        return process(arr, 0, arr.length-1);
+    public static void main(String[] args) {
+        int[] arr = {0, 9,2,3,4,5,6,7};
+        int arrMax = process(arr, 0, arr.length-1);
+        System.out.println(arrMax);
     }
 
     // arr[L...R]范围上求最大值

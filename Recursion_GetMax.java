@@ -11,8 +11,10 @@ public class Recursion_GetMax {
             return arr[L];
         }
         int mid = L + ((R - L) >> 1); // 中点
+        System.out.println("mid = " + mid);
         int leftMax = process(arr, L, mid);
         int rightMax = process(arr, mid + 1, R);
+        System.out.println("leftMax = " + leftMax + ". rightMax = " + rightMax);
         return Math.max(leftMax, rightMax);
     }
 }

@@ -9,9 +9,6 @@ for j = 2 to A.length
     A[i + 1] = key
 
 
-
-
-
 public class InsertionSort
 {
     public static void main(String[] args) {

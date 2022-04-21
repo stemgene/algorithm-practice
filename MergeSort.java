@@ -9,6 +9,7 @@ public class MergeSort {
     }
 
     public static void process(int[] arr, int L, int R){
+        // 在递归过程中，必须要有这个停止条件
         if (L == R) {
             return;
         }

@@ -30,8 +30,6 @@ public class RadixSort {
         int i = 0, j = 0;
         // 有多少个数准备多少个辅助空间
         int[] bucket = new int[R - L + 1];
-        System.out.println("bucket = ");
-        printArray(bucket);
         for (int d = 1; d <= digit; d++) { //有多少位就进出几次
             //System.out.println("The digit = " + d);
             /**
@@ -47,14 +45,12 @@ public class RadixSort {
                 j = getDigit(arr[i], d);  // 如果d=1，取个位数；如果d=3，取百位数     
                 count[j]++;  // 词频统计
             }
-            System.out.println("Count = ");
-            printArray(count);
             // 把count处理成前缀和数组
             for (i = 1; i < radix; i++) {
                 count[i] = count[i] + count[i - 1];
             }
             // 入桶：原数组从右往左遍历，把原数组的值放入桶中
-            for (i = R; i <= L; i--) {
+            for (i = R; i >= L; i--) {
                 j = getDigit(arr[i], d);
                 bucket[count[j] - 1] = arr[i];  // 把原数组的值放入到bucket指定位置
                 count[j]--;  // 词频--

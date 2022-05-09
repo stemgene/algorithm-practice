@@ -14,3 +14,27 @@ LeetCode 94
 2. 求一棵树的最大宽度
 
 LeetCode 102, 662
+
+### checkBST
+
+判断是否是搜索二叉树 Leetcode 98
+
+### IsBST
+
+判断是否是搜索二叉树，递归套路解法
+
+### IsCBT
+
+判断是否是完全二叉树 LeetCode 958
+
+### IsBalancedTree
+
+判断是否是平衡树
+
+### IsFull
+
+判断是否是满二叉树
+
+### LowestCommonAncestor
+
+判断两棵树的共同祖先

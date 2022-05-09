@@ -65,7 +65,7 @@ public class PreInPosTraversal {
         System.out.println("in-order: ");
         if (head != null) {
             Stack<Node> stack = new Stack<Node>();
-            while (!stack.isEmpty() || head != null) {
+            while (!stack.isEmpty() || head != null) {  //head和stack不能同时为空，否则整个流程执行完毕
                 if (head != null) {
                     stack.push(head);
                     head = head.left;  // head一直向左移动，把左边界压栈

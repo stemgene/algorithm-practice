@@ -38,3 +38,7 @@ LeetCode 102, 662
 ### LowestCommonAncestor
 
 判断两棵树的共同祖先
+
+### SuccessorNode
+
+找到二叉树的后继节点

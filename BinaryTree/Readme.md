@@ -42,3 +42,11 @@ LeetCode 102, 662
 ### SuccessorNode
 
 找到二叉树的后继节点
+
+### SerializeAndReconstructTree
+
+二叉树的序列化和反序列化  LeetCode 297
+
+### PaperFolding
+
+折纸判断凹凸折痕

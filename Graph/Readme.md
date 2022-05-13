@@ -13,3 +13,7 @@
 ### Kruskal
 
 Kruskal算法生成最小生成树
+
+### Prim
+
+Prim算法生成最小生成树

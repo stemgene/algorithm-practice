@@ -9,3 +9,7 @@
 ### TopologySort
 
 拓扑排序
+
+### Kruskal
+
+Kruskal算法生成最小生成树

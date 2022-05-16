@@ -17,3 +17,7 @@ Kruskal算法生成最小生成树
 ### Prim
 
 Prim算法生成最小生成树
+
+### Dijkstra
+
+计算Dijkstra距离

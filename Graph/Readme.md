@@ -20,4 +20,4 @@ Prim算法生成最小生成树
 
 ### Dijkstra
 
-计算Dijkstra距离
+计算Dijkstra距离以及优化算法

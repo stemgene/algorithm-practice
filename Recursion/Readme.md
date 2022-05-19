@@ -17,3 +17,7 @@ N皇后问题
 ### AllSubsquences
 
 打印一个字符串的全部子序列，包括空字符串 Leetcode 115求子序列
+
+### AllPermutations
+
+打印一个字符串的全部排列，并不要出现重复的

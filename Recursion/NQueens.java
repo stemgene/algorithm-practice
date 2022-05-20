@@ -19,7 +19,7 @@ public class NQueens {
             return 1;  // 此时record中的记录就是正确的结果
         }
         int res = 0;
-        for (int j = 0; i < n; j++) {  // 当前行在i行，尝试i行所有列 -> j
+        for (int j = 0; j < n; j++) {  // 当前行在i行，尝试i行所有列 -> j
             // 当前i行的皇后，放在j列，会不会和之前(0...i-1)的皇后，共行共列或者公斜线
             // 如果是，认为无效
             // 如果不是，认为有效
@@ -36,7 +36,7 @@ public class NQueens {
     // 不需要检查共行。只需要看两件事：共不共列，或跟之前的皇后共不共斜线
     public static boolean isValid(int[] record, int i, int j) {
         for (int k = 0; k < i; k++) {  // 之前的某个k行的皇后
-            // 检查共列和共斜线
+            // 检查共列和共斜线(45度或135度)
             if (j == record[k] || Math.abs(record[k] - j) == Math.abs(i - k)) {
                 return false;
             }

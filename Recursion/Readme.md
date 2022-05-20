@@ -21,3 +21,11 @@ N皇后问题
 ### AllPermutations
 
 打印一个字符串的全部排列，并不要出现重复的
+
+### CardsInLine
+
+绝顶聪明的玩家抽牌问题
+
+### ReverseStackUsingRecursive
+
+逆序栈

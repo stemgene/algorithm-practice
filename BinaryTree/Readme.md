@@ -50,3 +50,11 @@ LeetCode 102, 662
 ### PaperFolding
 
 折纸判断凹凸折痕
+
+### MaxDistanceInTree
+
+二叉树节点最大距离问题
+
+### MaxHappy
+
+最大快乐值问题

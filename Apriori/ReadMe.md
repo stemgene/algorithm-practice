@@ -34,17 +34,53 @@ $$ Lift(𝑋⇒𝑌)=\frac{Confidence(𝑋⇒𝑌)}{Spport(Y)} $$
 
 # Apriori 算法的步骤
 
+| ID | Items |
+| -- | -- |
+| 100 | A C D |
+| 200 | B C E |
+| 300 | A B C E |
+| 400 | B E |
+
 1. 生成候选项集：
 
 * 首先从单项集（每个商品单独的项集）开始，计算支持度，剔除支持度小于阈值的项集。
+
+| Items | Minimum Support |
+| -- | -- |
+| A | 2 |
+| B | 3 |
+| C | 3 |
+| D | 1 |
+| E | 3 |
+
+假设设置3为threshold，则frequent itemset则为
+
+| Items | Minimum Support |
+| -- | -- |
+| B | 3 |
+| C | 3 |
+| E | 3 |
 
 2. 连接操作：
 
 * 将上一步中找到的频繁项集两两组合，生成新的候选项集（更大的项集）。例如，从 {A}, {B} 生成 {A, B}。
 
+| Items | Minimum Support |
+| -- | -- |
+| (B, C) | 2 |
+| (B, E) | 3 |
+| (C, E) | 2 |
+
 3. 剪枝操作：
 
 * 在生成新项集后，剔除非频繁子集的项集，减少不必要的计算。
+
+
+| Items | Minimum Support |
+| -- | -- |
+| (B, E) | 3 |
+
+
 4. 重复步骤 1 至 3，直到无法生成新的候选项集。
 
 5. 生成关联规则：
